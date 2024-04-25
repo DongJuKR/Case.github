@@ -1,0 +1,110 @@
+*{
+  text-align : center;
+}
+
+.item1 {
+  left: 200px;
+  position: absolute;
+}
+.item2 {
+  position: absolute;
+  left: 650px;
+  top: 420px;
+}
+
+input{
+  font-family: 'Noto Sans KR','Noto Sans Korean', "Nanum Gothic", sans-serif !important;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0;
+  outline: none;
+  font-size: 10px;
+  
+}
+input::placeholder{
+color: #d9d9d9
+}
+.mainheader{
+  padding-top: 1px;
+}
+.dust-class{
+  width: 50%; 
+  box-sizeing: border-box;
+  margin: 20px auto;
+  position: relative;
+  
+}
+.dust-class label{
+  display: inline-block;
+  position: absolute;
+  top: -35px;
+  left: 10px;
+  padding: 10px;
+  background: rgb(255, 255, 255); opacity : 0.7;
+  border-radius: 25px;
+  font-size: 12px;
+  color: #888;
+  font-weight: bold;
+}
+.dust-class label span{
+  color: #da4841;
+  vertical-align: -1px;
+}
+.dust-class input {
+  width: 300px;
+  border: 1px solid #dddddd !important;
+  font-size: 1rem;
+  line-height: 1.45;
+  letter-spacing: -0.04rem;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 25px;
+  
+}
+.dust-class select{
+  width: 334px;
+  border: 1px solid #dddddd !important;
+  font-size: 1rem;
+  line-height: 1.45;
+  letter-spacing: -0.04rem;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 25px;
+}
+.b-button{
+  
+  background-color:#079992;
+  clor:white;
+  padding:12px 60px;
+  color:#fff;
+  font-size:14px;
+  border-radius:25px;
+  margin-top: 10px;
+}
+.g-recaptcha{
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
+  
+}
+.allpage{
+  width: 1100px;
+  height: 850px;
+  background-image: url('./SalesforceIMG.jpg');
+  background-size: cover;
+}
+.subbox{
+  position: absolute;
+  left: 17%;
+  top:15%;
+}
+
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+
+.normal{
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight:500;
+  font-size:17px;
+}
