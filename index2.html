@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객방문접수</title>
+  <link rel="icon" href="./android-icon-144x144.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script>
+    function submitForm() {
+      var inputValue1 = document.getElementById("00NIR000009MUiq").value;
+      var inputValue2 = document.getElementById("00NIR000009MQGr").value;
+      var inputValue3 = document.getElementById("00NIR000009MQGw").value;
+      var inputValue4 = document.getElementById("00NIR000009MV50").value;
+      var inputValue5 = document.getElementById("00NIR000009MQHz").value;
+      var inputValue6 = document.getElementById("email").value;
+      var inputValue7 = document.getElementById("00NIR000009MQHu").value;
+      var inputValue8 = document.getElementById("00NIR000009MQIT").value;
+      var inputValue9 = document.getElementById("00NIR000009MQId").value;
+  
+      if (!inputValue1 || !inputValue2 || !inputValue3 || !inputValue4 || !inputValue5 || 
+      !inputValue6 || !inputValue7 || !inputValue8 || !inputValue9) {
+        alert("필수 입력 값이 비어 있습니다. 입력 값을 확인해주세요.");
+      } else {
+        document.getElementById("myForm").submit();
+      }
+    }
+    </script>
+    
+</head>
+<body>
+  <div class="allpage">
+  <div class="mainheader">
+    <h1 class="normal">고객방문접수</h1>
+  </div>
+   
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
+  <!--  ----------------------------------------------------------------------  -->
+  <!-- onsubmit="beforeSubmit(event)" -->
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" id="myForm" method="POST">
+  <input type=hidden name="oid" value="00DIR000001KAiS">
+  <!-- <input type=hidden name="retURL" value="./thxforpage.html"> -->
+  <input type=hidden name="retURL" value="https://dongjukr.github.io/Lead.github/thxforpage.html">
+
+<div class="mainitem">
+<div class="responseitem">
+  <div class="item1">
+<dev class="dust-class">
+  <label>현장</label>
+  <select  id="00NIR000009MUiq" name="00NIR000009MUiq" title="현장"><option value="">--없음--</option><option value="가경자이(충북)">가경자이(충북)</option>
+    <option value="장유자이더파크">장유자이더파크</option>
+    <option value="동대구역센트럴시티자이">동대구역센트럴시티자이</option>
+    </select>
+</dev>
+</div>
+
+<div class="item1">
+  <dev class="dust-class">
+<label>예약일</label>
+<span class="dateInput dateOnlyInput"><input  id="00NIR000009MQGr" name="00NIR000009MQGr" size="12" type="text" /></span>
+
+</dev>
+</div>
+
+<div class="item1">
+<dev class="dust-class">
+  <label >시간대</label>
+  <select  id="00NIR000009MQGw" name="00NIR000009MQGw" title="시간대"><option value="">--없음--</option><option value="9-10시">9-10시</option>
+    <option value="10-11시">10-11시</option>
+    <option value="11-12시">11-12시</option>
+    <option value="12-13시">12-13시</option>
+    <option value="13-14시">13-14시</option>
+    <option value="14-15시">14-15시</option>
+    <option value="15-16시">15-16시</option>
+    </select>
+</dev>
+<br>
+</div>
+
+
+
+<div class="item1">
+<dev class="dust-class">
+  <label >입주자명</label>
+  <input  id="00NIR000009MV50" maxlength="255" name="00NIR000009MV50" size="20" type="text" />
+</dev>
+</div>
+
+<div class="item1">
+  <dev class="dust-class">
+<label>방문자명</label>
+<input  id="00NIR000009MQHz" maxlength="255" name="00NIR000009MQHz" size="20" type="text" /><br>
+</dev>
+</div>
+
+<div class="item1">
+  <dev class="dust-class">
+
+    <label for="email">이메일</label>
+    <input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+  </dev>
+</div>
+
+<div class="item1">
+<dev class="dust-class"> 
+  <label for="company">관계</label>
+  <select  id="00NIR000009MQHu" name="00NIR000009MQHu" title="관계"><option value="">--없음--</option><option value="계약자">계약자</option>
+    <option value="남편">남편</option>
+    <option value="아내">아내</option>
+    <option value="부">부</option>
+    <option value="모">모</option>
+    <option value="자">자</option>
+    <option value="녀">녀</option>
+    <option value="조부모">조부모</option>
+    <option value="시부모">시부모</option>
+    <option value="시조부모">시조부모</option>
+    <option value="친인척">친인척</option>
+    <option value="도우미">도우미</option>
+    <option value="기타">기타</option>
+    </select>
+</dev>
+</div>
+<div class="item1">
+<dev class="dust-class">
+  <label >방문목적</label>
+  <select  id="00NIR000009MQIT" name="00NIR000009MQIT" title="방문목적"><option value="">--없음--</option><option value="부동산">부동산</option>
+    <option value="공사">공사</option>
+    <option value="AS">AS</option>
+    <option value="청소">청소</option>
+    <option value="단순(기타)">단순(기타)</option>
+    </select>                                 
+</dev>
+</div>
+<div class="item1">
+<dev class="dust-class">
+  <label for="state">예약 비고</label>
+  <input  id="00NIR000009MQId" maxlength="255" name="00NIR000009MQId" size="20" type="text" />
+</dev>
+</div>
+
+<div class="item1">
+  <dev class="dust-class">
+    <input class="b-button normal" type="button" name="submit" value="제출" onclick="submitForm()">
+  </dev>
+  </div>
+
+
+
+
+
+
+
+</div>
+<br>
+
+</div>
+  </form>
+</div>
+
+</body>
+</html>
