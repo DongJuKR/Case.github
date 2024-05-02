@@ -51,10 +51,10 @@
   <label for="picklist">그룹</label>
   <select  id="00NIR000009MV5Z" name="00NIR000009MV5Z" title="그룹">
     <option value="">--없음--</option>       
+    <option value="발코니">발코니</option>
     <option value="침실">침실</option>
     <option value="거실">거실</option>
     <option value="욕실">욕실</option>
-    <option value="발코니">발코니</option>
     <option value="기타1">기타1</option>
     <option value="주방">주방</option>
     <option value="현관">현관</option>
@@ -227,12 +227,37 @@
 </dev>
 <br>
 
-<form method="post" action="upload" enctype="multipart/form-data">
-<dev class="dust-class">
-  <label>하자사진</label>
-  <input type="file" name="00NIR000009MQSJ" id="00NIR000009MQSJ" accept="image/*">
+<!--<form method="post" action="upload" enctype="multipart/form-data">
+<dev class="filebox">
+  <input class="upload-name" value="첨부파일" placeholder = "첨부파일">
+  <label for="file">파일찾기</label>
+  <input type ="file" name = "00NIR000009MQSJ" id = "00NIR000009MQSJ" >
 </dev>
-</form>
+</form> -->
+
+<form method="post" action="upload" enctype="multipart/form-data">
+  <dev class="dust-class">
+    <label for="file">하자사진</label>
+    <input type="file" style="background-color: aliceblue;" name="00NIR000009MQSJ" id="00NIR000009MQSJ" accept="image/*" onchange="setThumbnail(event);" multiple/>
+    <div id = "image_container"></div>
+    <script>
+      function setThumbnail(event) {
+        for (var image of event.target.files) {
+          var reader = new FileReader();
+
+          reader.onload = function(event) {
+            var img = document.createElement("img");
+            img.setAttribute("src", event.target.result);
+            document.querySelector("div#image_container").appendChild(img);
+          };
+
+          console.log(image);
+          reader.readAsDataURL(image);
+        }
+      }
+    </script>
+  </dev>
+  </form>
 <!-- </div> -->
 <br>
 <!-- <div class="item2"> -->

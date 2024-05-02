@@ -89,7 +89,7 @@ color: #d9d9d9
 }
 .allpage{
   width: 1100px;
-  height: 850px;
+  height: 800px;
   background-image: url('./SalesforceIMG.jpg');
   background-size: cover;
 }
@@ -99,7 +99,16 @@ color: #d9d9d9
   top:15%;
 }
 
-
+body {margin: 10px;}
+.where {
+  display: block;
+  margin: 25px 15px;
+  font-size: 11px;
+  color: #000;
+  text-decoration: none;
+  font-family: verdana;
+  font-style: italic;
+} 
 
 /*@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
 
