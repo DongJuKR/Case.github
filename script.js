@@ -1,3 +1,4 @@
+// 필수 입력값이 입력됐는지 id 값을 확인하는 스크립트
 function submitForm() {
     
   let resultFlag = false;

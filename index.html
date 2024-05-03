@@ -238,33 +238,31 @@
 <form method="post" action="upload" enctype="multipart/form-data">
   <dev class="dust-class">
     <label for="file">하자사진</label>
-    <input type="file" style="background-color: aliceblue;" name="00NIR00000BXAck" id="00NIR00000BXAck" accept="image/*" onchange="setThumbnail(event);" multiple/>
-    <div id = "image_container"></div>
+    <input type="file" style="background-color: aliceblue;" name="00NIR00000BXAck" id="00NIR00000BXAck" accept="image/*" onchange="readURL(this);" multiple/>
+    <br><br>
+    <img id="preview" alt="첨부된 사진파일 미리보기" width="100px" height="100px" style="background-color: aliceblue;"/></img>
+    
+    <!-- 이미지 미리보기를 위한 스크립트 추가 -->
     <script>
-      function setThumbnail(event) {
-        for (var image of event.target.files) {
-          var reader = new FileReader();
-
-          reader.onload = function(event) {
-            var img = document.createElement("img");
-            img.setAttribute("src", event.target.result);
-            document.querySelector("div#image_container").appendChild(img);
-          };
-
-          console.log(image);
-          reader.readAsDataURL(image);
-        }
-      }
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function(e) {
+                document.getElementById('preview').src = e.target.result;
+              };
+              reader.readAsDataURL(input.files[0]);
+            } else {
+              document.getElementById('preview').src = "";
+            }
+          }
     </script>
-  </dev>
+    </dev>
   </form>
-<!-- </div> -->
-<br>
-<!-- <div class="item2"> -->
 
+<br>
   <input class="b-button normal" type="submit" name="submit">
 </div>
-<!-- </div> -->
+
 
   </form>
 </div>

@@ -89,9 +89,16 @@ color: #d9d9d9
 }
 .allpage{
   width: 1100px;
-  height: 800px;
+  height: 870px;
   background-image: url('./SalesforceIMG.jpg');
   background-size: cover;
+}
+
+.image_container{
+  width: 100px;
+  height: 100pt;
+  overflow: hidden;
+  margin: 0 auto;
 }
 .subbox{
   position: absolute;
