@@ -6,7 +6,7 @@ function submitForm() {
   var inputValue1 = document.getElementById("00NIR000009MV5P").value;
   var inputValue2 = document.getElementById("00NIR000009MV5U").value;
   var inputValue3 = document.getElementById("00NIR000009MV5e").value;
-  var inputValue4 = document.getElementById("00NIR00000AHLva").value;
+  var inputValue4 = document.getElementById("00NIR000009MV5j").value;
   var inputValue5 = document.getElementById("subject").value;
   
   if (!inputValue1 || !inputValue2 || !inputValue3 || !inputValue4 || !inputValue5) {
